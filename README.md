@@ -1,6 +1,8 @@
 # Laptop Setup
 
 ## Install Chrome
+Download from ...
+https://www.google.com/chrome/browser/desktop/index.html
 
 ## For Mechanical Keyboard
 * Capslock => Control
@@ -27,7 +29,7 @@ Install from App Store
 ```git clone https://github.com/slabounty/dotjanus```
 
 ## Install zsh
-```brew install zsh zsh-completions
+```brew install zsh zsh-completions```
 
 ## Install dotfiles
 ```
@@ -59,4 +61,17 @@ https://www.iterm2.com/downloads.html
 # Set zsh  Preferences/General/Command zsh --login
 ```
 
+## Install PostgreSQL
+Here's a good set of instructions ... https://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/
 
+```
+brew install postgresql
+initdb /usr/local/var/postgres -E utf8
+gem install lunchy
+mkdir -p ~/Library/LaunchAgents
+cp /usr/local/Cellar/postgresql/9.2.1/homebrew.mxcl.postgresql.plist ~/Library/LaunchAgents/
+lunchy start postgres
+
+# To stop ...
+# lunchy stop postgres
+```
