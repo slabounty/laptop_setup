@@ -9,12 +9,20 @@ https://www.google.com/chrome/browser/desktop/index.html
 * Option => Command
 * Command => Option
 
+## For Mouse
+* Unset "Scoll direction: Natural"
+* Set "Secondary click"
+
 ## Install Brew
 See Instructions on brew.sh
 ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 
 ## Install Git
 ```brew install git```
+
+Use directions here ...
+https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
+to create a new ssh key and add it to github.
 
 ## Install Xcode (full installation needed for MacVim)
 Install from App Store
@@ -26,7 +34,10 @@ Install from App Store
 ```curl -L https://bit.ly/janus-bootstrap | bash```
 
 ## Install dotjanus
-```git clone https://github.com/slabounty/dotjanus```
+```
+git clone https://github.com/slabounty/dotjanus
+./dotjanus/dotlink
+```
 
 ## Install zsh
 ```brew install zsh zsh-completions```
@@ -34,7 +45,7 @@ Install from App Store
 ## Install dotfiles
 ```
 git clone https://github.com/slabounty/dotfiles
-./dotlink
+./dotfiles/dotlink
 ```
 
 ## Install rbenv
